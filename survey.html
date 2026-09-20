@@ -21,16 +21,16 @@
     <main>
       <h1 id="title">Coding Club Survey Form</h1>
       <p id="description">We appreciate your opinion on our club :)</p>
-      <form class="survey-form" action="" method="">
+      <form class="survey-form" action="https://formspree.io/f/mnpnjdby" method="POST">
       <fieldset class="personal-information section">
         <legend class="legend-title">Personal Information</legend>
         <label id="name-label">
           Name: 
-          <input required id="name" name="name" type="text" placeholder="e.g. John Doe">
+          <input id="name" name="name" type="text" placeholder="e.g. John Doe">
         </label>
         <label id="email-label">
           Email: 
-          <input required id="email" name="email" type="email" placeholder="example@mail.com">
+          <input id="email" name="email" type="email" placeholder="example@mail.com">
         </label>
         <label id="number-label">
           Age: 
@@ -39,7 +39,7 @@
         
         <label id="grade-label">
           Grade: 
-          <select id="dropdown" name="grade">
+          <select required id="dropdown" name="grade">
             <option class="dropdown-option-label" default value="">Please select</option>
             <option class="dropdown-option-label" value="8">8</option>
             <option class="dropdown-option-label" value="9">9</option>
