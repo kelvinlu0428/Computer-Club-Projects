@@ -1,0 +1,103 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --primary-color: #F7C59F;
+    --secondary-color: #2A324B;
+    --background-color: #C7CCDB;
+    --text-color-dark: #333;
+    --text-color-light: #eee;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    font-family: Georgia, serif;
+}
+
+.header-title {
+    font-family: Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    color: var(--text-color-dark);
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background-color: var(--primary-color);
+}
+
+.header-title::before {
+    content: "";
+    background: url('images/club-icon-no-banner.png') no-repeat left center;
+    background-size: contain;
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}  
+
+.nav-bar {
+    font-family: Georgia, serif;
+    background-color: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 35%);
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+}
+
+.nav-link {
+    color: var(--text-color-light);
+    text-decoration: none;
+    display: block;
+    padding: 0.45rem 1rem;
+    border-bottom: 2px solid var(--secondary-color);
+    transition: all 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+@media (max-width: 768px) {
+
+
+
+    .nav-bar ul {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .nav-link {
+        padding: 0.4rem 0.6rem;
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .nav-bar ul {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,80 @@
+
+
+body {
+  font-family: arial;
+  background: linear-gradient(to bottom, var(--secondary-color),  var(--background-color));
+  height: 100vh;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  background-color: #ffffff5f;
+  color: var(--text-color-dark);
+  margin: 50px auto;
+  padding: 30px;
+  width: 80%;
+  max-width: 300px;
+  border: 4px double var(--secondary-color);
+  border-radius: 10px;
+}
+
+label {
+  color: var(--text-color-dark);
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+
+input, textarea {
+  display: block;
+  padding: 0.5em;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  border-radius: 5px;
+  border: none;
+  width: 90%;
+}
+
+textarea {
+  field-sizing: content;
+  min-height: 3rem;
+}
+
+button {
+    display: block;
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    padding: 0.7rem 1.25rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin: 1.5rem auto 0 auto;
+    border-radius: 999px;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+}
+
+footer {
+  color: var(--text-color-light);
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}

@@ -1,0 +1,93 @@
+body {
+  text-align: left;
+  margin: 0px auto;
+  width: 100vw;
+  min-height:calc(100vh - 100px);
+  background-color: var(--background-color);
+}
+
+.event-section {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color-dark);
+  background-color: var(--background-color);
+  margin: 0px auto;
+  padding: 20px 30px;
+  width: 100vw;
+}
+
+.event-intro {
+  display:inline;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.event-picture {
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px var(--secondary-color);
+}
+
+.event-name {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--text-color-dark);
+}
+
+.event-details {
+  list-style-position: inside;
+  max-width: 550px;
+  margin: 0px auto;
+  font-size: 1.25rem;
+}
+
+
+.event-details li{
+  text-align: left;
+  width: 80%;
+  margin: 15px auto;
+
+}
+
+.detail-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 20px;
+  background-color: var(--secondary-color);
+  margin: 0px auto;
+  padding: 20px 0px;
+  color: var(--text-color-light);
+  flex-wrap: wrap;
+}
+
+section > h2 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+section {
+  display: inline-block;
+  width: 230px;
+  padding: 0px 20px;
+  margin: 20px;
+}
+
+
+.activities-list {
+  list-style-position: outside;
+  text-align:left;
+}
+
+.participants-list {
+  list-style-position: outside;
+  text-align:left;
+}
+
+.list-item {
+  margin-bottom: 10px;
+}
+
+hr {
+  width: 90%;
+}

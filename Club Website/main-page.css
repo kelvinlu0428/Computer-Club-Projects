@@ -1,0 +1,231 @@
+body {
+    line-height: 1.6;
+    color: var(--text-color-dark);
+    background: linear-gradient(135deg, #C7CCDB 0%, #e5e7ef 100%);
+}
+
+.section {
+    margin: auto;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    background: var(--secondary-color);
+    color: var(--text-color-light);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 1rem;
+    box-shadow: 0 14px 30px rgb(42 50 75 / 18%);
+}
+
+#introduction {
+    grid-column: 2;
+}
+
+
+.main-description {
+    color: var(--text-color-light);
+}
+
+.main-title {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin: 0 20px 10px 20px;
+}
+
+.main-list {
+    list-style-position: outside;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10vw;
+}
+
+.main-list-item {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(0, 800px) minmax(1rem, 1fr);
+    gap: 2rem;
+    padding: 3rem 1rem 5rem;
+    justify-content: center;
+}
+
+footer {
+    color: var(--text-color-dark);
+    text-align: center;
+    padding: 1rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--text-color-dark);
+    text-decoration: none;
+    padding: 0.7rem 1.25rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    border-radius: 999px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+
+}
+
+.section {
+    margin: auto;
+    padding: 4rem 1.5rem;
+    text-align: center;
+    background: var(--secondary-color);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 1rem;
+    box-shadow: 0 14px 30px rgb(42 50 75 / 18%);
+}
+
+#about {
+    padding: 2rem;
+    grid-column: 2;
+    display: block;
+}
+
+.about-title {
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+
+
+.events {
+    padding: 2rem;
+    grid-column: 2;
+    background-color: var(--secondary-color);
+}
+
+.events-title {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.events-intro {
+    color: #cdd2df;
+    margin-bottom: 1.75rem;
+}
+
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.event-item {
+    padding: 1.25rem;
+    text-align: left;
+    background-color: rgb(247 197 159 / 12%);
+    border: 1px solid rgb(247 197 159 / 35%);
+    border-radius: 0.75rem;
+}
+
+.event-item:hover {
+    background-color: rgb(247 197 159 / 20%);
+    border-color: rgb(247 197 159 / 50%);
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.event-link:hover .event-name {
+    border-bottom-color: var(--primary-color);
+}
+
+.event-day {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.35rem;
+    
+}
+
+.event-name {
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+    color: var(--text-color-light);
+}
+
+.event-description {
+    color: #cdd2df;
+    font-size: 0.95rem;
+}
+
+#survey {
+    grid-column:2;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+    }
+
+    #introduction,
+    #about,
+    .events,
+    #survey {
+        grid-column: 1;
+    }
+
+    .nav-bar ul {
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .nav-link {
+        padding: 0.4rem 0.6rem;
+        font-size: 1rem;
+    }
+
+    .events-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar ul {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
