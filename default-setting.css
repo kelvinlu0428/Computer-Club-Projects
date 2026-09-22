@@ -33,13 +33,13 @@ body {
 
 .header-title::before {
     content: "";
-    background: url('images/club-icon-no-banner.png') no-repeat left center;
+    background: url('images/dover-bay-computer-club-logo-transparent-background.png') no-repeat left center;
     background-size: contain;
-    width: 2em;
-    height: 2em;
+    width: 3em;
+    height: 3em;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 10px 0 0;
+    margin: 0 20px 0 0;
 }  
 
 .nav-bar {
